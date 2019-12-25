@@ -6596,19 +6596,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\outmane\\.nuget\\packages\\": {}
+    "C:\\Users\\Outmane.BALADI\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\outmane\\source\\repos\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Outmane.BALADI\\source\\repos\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "projectName": "GradeBook.Tests",
-      "projectPath": "C:\\Users\\outmane\\source\\repos\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
-      "packagesPath": "C:\\Users\\outmane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\outmane\\source\\repos\\gradebook\\test\\GradeBook.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Outmane.BALADI\\source\\repos\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "packagesPath": "C:\\Users\\Outmane.BALADI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Outmane.BALADI\\source\\repos\\gradebook\\test\\GradeBook.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\outmane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Outmane.BALADI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6621,8 +6621,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\outmane\\source\\repos\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
-              "projectPath": "C:\\Users\\outmane\\source\\repos\\gradebook\\src\\GradeBook\\GradeBook.csproj"
+            "C:\\Users\\Outmane.BALADI\\source\\repos\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+              "projectPath": "C:\\Users\\Outmane.BALADI\\source\\repos\\gradebook\\src\\GradeBook\\GradeBook.csproj"
             }
           }
         }
@@ -6668,7 +6668,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

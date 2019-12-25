@@ -2,13 +2,8 @@ using System;
 using System.Collections.Generic;
 
 namespace GradeBook
-{   public interface IBook{
-        public Name {get;}
-        void AddGrade(double grade);
-        Statistics GetStatistics();
-        event GradeAddedDelegate GradeAdded;
-    }
-    public abstract class Book : IBook
+{   
+    public class Book 
     {
         List<double> grades;
         public string Name;
