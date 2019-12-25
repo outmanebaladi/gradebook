@@ -3,17 +3,56 @@ using Xunit;
 
 namespace GradeBook.Tests
 {
+    public delegate string WriteLogDelegate(string logMessage);
     public class TypeTests
     {
+        int count = 0;
         [Fact]
-        public void Test1()
+        public void WriteLogDelegateCanPointToMethod()
+        {
+            WriteLogDelegate log = ReturnMessage;
+            log += ReturnMessage;
+            log += IncrementCount;
+
+            var result = log("Hello!");
+            Assert.Equal(3, count);
+        }
+
+        string IncrementCount(string message) 
+        {
+            count++;
+            return message.ToLower();
+        }
+
+        string ReturnMessage(string message) 
+        {
+            count++;
+            return message;
+        }
+
+        [Fact]
+        public void StringsBehaveLikeValueTypes(){
+            string name = "Baladi";
+            var upper = MakeUppercase(name);
+
+            Assert.Equal("Baladi", name);
+            Assert.Equal("BALADI", upper);
+        }
+
+        private string MakeUppercase(string parameter)
+        {
+            return parameter.ToUpper();
+        }
+
+        [Fact]
+        public void ValueTypesAlsoPassByValue()
         {
             var x = GetInt();
-            SetInt(x);
+            SetInt(ref x);
 
-            Assert.Equal(3, x);
+            Assert.Equal(42, x);
         }
-        private void SetInt(int x)
+        private void SetInt(ref Int32 x)
         {
             x = 42;
         }
