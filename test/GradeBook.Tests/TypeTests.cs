@@ -123,7 +123,5 @@ namespace GradeBook.Tests
         InMemoryBook GetBook(string name){
             return new InMemoryBook(name);
         }
-
-
     }
 }

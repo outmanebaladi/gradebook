@@ -30,7 +30,6 @@ namespace GradeBook
         public abstract event GradeAddedDelegate GradeAdded;
         public abstract void AddGrade(double grade);         
         public abstract Statistics GetStatistics();
-
     }
     public delegate void GradeAddedDelegate(object sender, EventArgs args);
     public class DiskBook : Book
@@ -38,7 +37,7 @@ namespace GradeBook
         public DiskBook(string name) : base(name)
         {    
         }
-        public override event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate? GradeAdded;
         public override void AddGrade(double grade){
             using(var writer = File.AppendText($"{Name}.txt"))
             {
@@ -68,7 +67,7 @@ namespace GradeBook
     public class InMemoryBook : Book
     {
         List<double> grades;
-        public override event GradeAddedDelegate GradeAdded;
+        public override event GradeAddedDelegate? GradeAdded;
         public const string CATEGORY = "Science";
         public InMemoryBook(string name) : base(name)
         {
